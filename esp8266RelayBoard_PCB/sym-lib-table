@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ESP8266)(type Legacy)(uri E:/NRF52840_Synersesnse_31_5_20/4.ALL_PCB/10.ESP8266_RelayBoard/SchLib/ESP8266.lib)(options "")(descr ""))
+  (lib (name ESP8266_RelayBoard-rescue)(type Legacy)(uri ${KIPRJMOD}/ESP8266_RelayBoard-rescue.lib)(options "")(descr ""))
+)

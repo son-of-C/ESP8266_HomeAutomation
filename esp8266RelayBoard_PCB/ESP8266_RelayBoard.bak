@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+LIBS:AbhedhyaSurakshaRelayBoard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Isolator:PC817 U1
+U 1 1 5D52B6FE
+P 3775 3450
+F 0 "U1" H 3775 3650 50  0000 C CNN
+F 1 "PC817" H 3775 3225 50  0000 C CNN
+F 2 "Kirtan_Footprints:DIP-4_W7.62mm_kirtan" H 3575 3250 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3775 3450 50  0001 L CNN
+	1    3775 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D52B771
+P 3275 3350
+F 0 "R1" V 3350 3300 50  0000 L CNN
+F 1 "220E" V 3275 3250 50  0000 L CNN
+F 2 "Kirtan_Footprints:1206_R_kirtan" V 3205 3350 50  0001 C CNN
+F 3 "~" H 3275 3350 50  0001 C CNN
+	1    3275 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D52B7F9
+P 4775 2850
+F 0 "R2" H 4675 2850 50  0000 C CNN
+F 1 "2.2K" V 4775 2850 50  0000 C CNN
+F 2 "Kirtan_Footprints:1206_R_kirtan" V 4705 2850 50  0001 C CNN
+F 3 "~" H 4775 2850 50  0001 C CNN
+	1    4775 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D1
+U 1 1 5D52CA18
+P 5025 3000
+F 0 "D1" V 5100 3025 50  0000 L CNN
+F 1 "1N4148" V 5175 3025 50  0000 L CNN
+F 2 "Kirtan_Footprints:S1M_Kirtan" V 5025 3000 50  0001 C CNN
+F 3 "~" V 5025 3000 50  0001 C CNN
+	1    5025 3000
+	0    1    1    0   
+$EndComp
+Text GLabel 1575 2250 2    50   Input ~ 0
+3.3VDC
+$Comp
+L Relay:Y14x-1C-xxDS RL1
+U 1 1 5D52E481
+P 5750 2975
+F 0 "RL1" H 5275 3000 50  0000 C CNN
+F 1 "Relay12V_SugarCube" H 5274 2975 50  0001 C CNN
+F 2 "Kirtan_Footprints:Relay_ kirtan" H 6200 2925 50  0001 L CNN
+F 3 "http://www.hsinda.com.cn/en/imgdown.asp?FileName=UploadFiles/201431310240386.pdf" H 5750 2975 50  0001 C CNN
+	1    5750 2975
+	1    0    0    -1  
+$EndComp
+Text Notes 1425 3575 0    50   ~ 10
+RELAY_OUT
+Wire Notes Line
+	2000 4225 2000 3600
+Text Notes 1075 2050 0    50   ~ 10
+INPUT
+Wire Wire Line
+	5550 2675 5550 2650
+Wire Wire Line
+	5550 3350 5550 3275
+Text GLabel 1575 2350 2    50   Input ~ 0
+GND_IN
+Wire Wire Line
+	1475 2350 1575 2350
+Wire Wire Line
+	1475 2250 1575 2250
+Wire Wire Line
+	3425 3350 3475 3350
+Text GLabel 3075 3350 0    50   Input ~ 0
+3.3VDC
+Text GLabel 3075 3550 0    50   Input ~ 0
+GND_IN
+Wire Wire Line
+	3125 3350 3075 3350
+Wire Wire Line
+	3075 3550 3475 3550
+$Comp
+L Device:LED_Small L1
+U 1 1 5D57665F
+P 4775 3200
+F 0 "L1" V 4700 3325 50  0000 R CNN
+F 1 "LED_Small" V 4675 3775 50  0001 R CNN
+F 2 "Kirtan_Footprints:LED_D3.0mm_kirtan" V 4775 3200 50  0001 C CNN
+F 3 "~" V 4775 3200 50  0001 C CNN
+	1    4775 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4775 3300 4775 3350
+Wire Wire Line
+	4775 3100 4775 3000
+Wire Wire Line
+	4775 2700 4775 2650
+Text GLabel 4125 3550 2    50   Input ~ 0
+GND_OUT
+Text GLabel 4475 2650 0    50   Input ~ 0
++12VDC
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5D57984E
+P 1275 2250
+F 0 "J1" H 1275 2350 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1025 2000 50  0001 C CNN
+F 2 "Kirtan_Footprints:TerminalBlock_bornier-2_P5.08mm_kirtan" H 1275 2250 50  0001 C CNN
+F 3 "~" H 1275 2250 50  0001 C CNN
+	1    1275 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5D57C65A
+P 1325 3000
+F 0 "J2" H 1325 3100 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1075 2750 50  0001 C CNN
+F 2 "Kirtan_Footprints:TerminalBlock_bornier-2_P5.08mm_kirtan" H 1325 3000 50  0001 C CNN
+F 3 "~" H 1325 3000 50  0001 C CNN
+	1    1325 3000
+	-1   0    0    -1  
+$EndComp
+Text GLabel 1625 3000 2    50   Input ~ 0
++12VDC
+Wire Wire Line
+	1525 3000 1625 3000
+Text GLabel 1625 3100 2    50   Input ~ 0
+GND_OUT
+Wire Wire Line
+	1525 3100 1625 3100
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 5D57DC35
+P 1925 3900
+F 0 "J3" H 1875 4100 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 2005 3851 50  0001 L CNN
+F 2 "Kirtan_Footprints:TerminalBlock_bornier-3_P5.08mm_kirtan" H 1925 3900 50  0001 C CNN
+F 3 "~" H 1925 3900 50  0001 C CNN
+	1    1925 3900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1975 2075 1975 2450
+Wire Notes Line
+	1975 2450 1075 2450
+Wire Notes Line
+	1075 2450 1075 2075
+Wire Notes Line
+	1075 2075 1975 2075
+Wire Notes Line
+	1150 2850 2050 2850
+Wire Notes Line
+	2050 2850 2050 3275
+Wire Notes Line
+	2050 3275 1150 3275
+Wire Notes Line
+	1150 3275 1150 2850
+Text Notes 1100 2800 0    50   ~ 10
+RELAY OPERATING VOLTAGE
+Wire Wire Line
+	4075 3350 4775 3350
+Connection ~ 4775 3350
+Wire Wire Line
+	4475 2650 4775 2650
+Connection ~ 4775 2650
+Wire Wire Line
+	4075 3550 4125 3550
+Text GLabel 6225 3400 2    50   Input ~ 0
+COMMON
+Text GLabel 6225 2650 2    50   Input ~ 0
+NO
+Text GLabel 6225 2550 2    50   Input ~ 0
+NC
+Text GLabel 1650 3900 0    50   Input ~ 0
+COMMON
+Text GLabel 1650 4000 0    50   Input ~ 0
+NO
+Text GLabel 1650 3800 0    50   Input ~ 0
+NC
+Wire Wire Line
+	1650 3800 1725 3800
+Wire Wire Line
+	1650 3900 1725 3900
+Wire Wire Line
+	1650 4000 1725 4000
+Wire Notes Line
+	1250 3600 1250 4225
+Wire Notes Line
+	1250 4225 2000 4225
+Wire Notes Line
+	1250 3600 2000 3600
+Wire Wire Line
+	5950 3275 5950 3400
+Wire Wire Line
+	5950 3400 6225 3400
+Wire Wire Line
+	6050 2675 6050 2650
+Wire Wire Line
+	6050 2650 6225 2650
+Wire Wire Line
+	5850 2675 5850 2550
+Wire Wire Line
+	5850 2550 6225 2550
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5D56D0BE
+P 3400 4550
+F 0 "MH1" H 3500 4596 50  0000 L CNN
+F 1 "MountingHole" H 3500 4505 50  0000 L CNN
+F 2 "Kirtan_Footprints:MountNPTH_3.0mm_kirtan" H 3400 4550 50  0001 C CNN
+F 3 "~" H 3400 4550 50  0001 C CNN
+	1    3400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5D56D10C
+P 3400 4800
+F 0 "MH2" H 3500 4846 50  0000 L CNN
+F 1 "MountingHole" H 3500 4755 50  0000 L CNN
+F 2 "Kirtan_Footprints:MountNPTH_3.0mm_kirtan" H 3400 4800 50  0001 C CNN
+F 3 "~" H 3400 4800 50  0001 C CNN
+	1    3400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 5D56D1A9
+P 4400 4550
+F 0 "MH3" H 4500 4596 50  0000 L CNN
+F 1 "MountingHole" H 4500 4505 50  0000 L CNN
+F 2 "Kirtan_Footprints:MountNPTH_3.0mm_kirtan" H 4400 4550 50  0001 C CNN
+F 3 "~" H 4400 4550 50  0001 C CNN
+	1    4400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 5D56D20F
+P 4400 4800
+F 0 "MH4" H 4500 4846 50  0000 L CNN
+F 1 "MountingHole" H 4500 4755 50  0000 L CNN
+F 2 "Kirtan_Footprints:MountNPTH_3.0mm_kirtan" H 4400 4800 50  0001 C CNN
+F 3 "~" H 4400 4800 50  0001 C CNN
+	1    4400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 2650 5025 2650
+Wire Wire Line
+	4775 3350 5025 3350
+Wire Wire Line
+	5025 2850 5025 2650
+Connection ~ 5025 2650
+Wire Wire Line
+	5025 2650 5550 2650
+Wire Wire Line
+	5025 3150 5025 3350
+Connection ~ 5025 3350
+Wire Wire Line
+	5025 3350 5550 3350
+$EndSCHEMATC
